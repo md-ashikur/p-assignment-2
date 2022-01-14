@@ -97,7 +97,7 @@ Popular Collection start
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    width: 800px;
+    
 
 }
 .collection-title{
@@ -111,6 +111,9 @@ Popular Collection start
 
     
 
+}
+.cards{
+    width: 330px;
 }
 
 .card{
