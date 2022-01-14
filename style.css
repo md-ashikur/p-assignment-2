@@ -94,8 +94,10 @@ Popular Collection start
 -------------------------------- */
 
 .section-2{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+    grid-gap: 30px;
+    width: 800px;
 
 }
 .collection-title{
