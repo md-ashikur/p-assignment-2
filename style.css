@@ -112,6 +112,7 @@ button i{
 /* --------------------------------
 Popular Collection start
 -------------------------------- */
+
 .product-sec{
     display: flex;
     justify-content: center;
@@ -126,8 +127,8 @@ Popular Collection start
 
 }
 .section2{
-    width: 1047px;
     padding: 50px;
+    
     
 }
 
@@ -177,6 +178,22 @@ Popular Collection start
 .description{
     color: #787885;
 
+}
+
+.see-more{
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: bold;
+    font-size: 16px;
+}
+.see-more i{
+    padding-left: 8px;
+    margin: 50px 0;
+}
+.see-more:hover{
+    position: relative;
+    left: 10px;
+    transition: position ease-in-out 0.3s;
 }
 /* --------------Popular Collection end----------------- */
 
@@ -275,12 +292,16 @@ Mobile version
         
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 30px;
-        margin: 50px 0 50px 0;
+        margin: 50px 0 0px 0;
       
     }
     .section2{
         padding: 0;
         margin: 0 20px;
+    }
+    .see-more{
+        margin: 0px;
+        padding-right: 16px;
     }
     /* ---popular-collection-end----- */
     
