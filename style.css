@@ -3,30 +3,38 @@ body{
     margin: 0;
     padding: 0;
 }
-main{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+
 /* --------------------------
     header-section-start
 ------------------------------- */
 
-.sections{
-    width: 85%;
+.heading-sec{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 50px 0;
+    width: 100%
+    
+}
+
+.headparts{
+    
+    width: 1200px;
+    margin: 80px 0 100px 0;
     
 }
 
 .headpart{
-    width: 50%;
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    align-items: center;
 
 }
+
 .head-pic{
     position: relative;
+    margin-left: 100px;
+    
 }
 .head-pic img{
     width: 440px;
@@ -34,6 +42,7 @@ main{
     position: relative;
     top: 50px;
     left: 20px;
+    
 }
 .border-circle{
     width: 450px;
@@ -54,10 +63,11 @@ main{
     background-color: #F1E4FF;
 }
 .head-text{
-    margin-right: 100px;
+    padding-left: 20px;
+    
 }
 .head-text h1{
-    font-size: 45px;
+    font-size: 40px;
     color: #3A3A3A;
     margin: 0;
 
@@ -89,40 +99,47 @@ button:hover{
 button i{
     margin-left: 8px;
 }
+
+
+
 /* ---------header-section-end---------------- */
 
 /* --------------------------------
 Popular Collection start
 -------------------------------- */
-
-.section-2{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    width: 330px;
+.product-sec{
+    display: flex;
+    justify-content: center;
     
-
+    ;
 }
-.collection-title{
-    
-    position: relative;
-    top: 0px;
-    margin: 100px 0 0 0;
-    font-weight: 600;
+.popular-title{
+    text-align: center;
+    margin: 30px 0;
     font-size: 28px;
     color: #3A3A3A;
 
+}
+.section2{
+    width: 1047px;
+    padding: 50px;
+    
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
     
 
 }
-.cards{
-    width: 330px;
-}
+
 
 .card{
     padding: 17px 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+    
 }
 .card-pic img{
     width: 300px;
@@ -196,18 +213,40 @@ footer{
 Mobile version
 ----------------------------------------- */
 @media only screen and (max-width:688px){
-    main{
-        width: 100%;
+
+    /* -----------------head-section-start-------------- */
+    .head-pic{
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        margin-left: 0;
+        
     }
-    .headpart{
-        width: 100%;
-    
+    .head-pic img{
+        top: 80px;
+        left: 35px;
+        width: 250px;
+        height: auto;
     }
+    .border-circle{
+        
+        width: 300px;
+        height: 300px;
+    }
+    .head-pic .circle{
+        top: 65px;
+        left: 60px;
+        width: 230px;
+        height: 230px;
+    }
+    /* -----------head-text--------- */
+
     .head-text{
-        position: relative;
-        top: 350px;
+        position: absolute;
+        top: 400px;
         left: 0px;
-        margin-right: 0;
+        margin: 0;
+        padding: 10px;
         text-align: center;
     }
     .head-text h1{
@@ -220,51 +259,24 @@ Mobile version
         
     
     }
-    .head-pic{
-        position: absolute;
-        top: 50px;
-        left: 15px;
-        
-    }
-    .head-pic img{
-        top: 80px;
-        left: 25px;
-        width: 250px;
-        height: auto;
-    }
-    .head-pic .border-circle{
-        
-        width: 300px;
-        height: 300px;
-    }
-    .head-pic .circle{
-        top: 65px;
-        left: 60px;
-        width: 230px;
-        height: 230px;
-    }
+    
+    /* ----------------head-section-end------------- */
 
-
-    .section-2{
-        position: relative;
-        top: 80px;
+    /* ----------popular-collection-start------------- */
+    .product-sec{
+         margin-top: 550px;
+    }
+    .products{
+        
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 30px;
-        margin: 200px 0 50px 0;
+        margin: 50px 0 50px 0;
+      
+    }
+    .section2{
+        padding: 0;
+        margin: 0 20px;
+    }
+    /* ---popular-collection-end----- */
     
-    }
-    .collection-title{
-        position: relative;
-        top: 250px;
-        font-size: 16px;
-        left: 0;
-        
-    }
-   
-   
-    footer{
-        position: relative;
-        top: 100px;
-        
-    }
 }
