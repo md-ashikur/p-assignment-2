@@ -197,6 +197,83 @@ Popular Collection start
 }
 /* --------------Popular Collection end----------------- */
 
+/* ------------------------------------------
+get-in-touch-start
+----------------------------------------- */
+.get-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+   
+}
+
+.get-in{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    width: 1000px;
+}
+.get-details{
+    padding: 50px;
+}
+.get-text h3{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 28px;
+    margin: 0;
+}
+.get-text p{
+    color: #787885;
+    font-size: 14px;
+    margin: 15px 0;
+}
+.address{
+    color: #5E6366;
+}
+/* -------------form------------------------------ */
+.get-form{
+    padding: 50px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    
+    
+}
+.get-form h3{
+   font-size: 24px;
+   color: rgba(224, 44, 109, 0.87);
+}
+
+.f-input{
+    width: 100%;
+    position: relative;
+    padding: 12px 20px;
+    margin: 15px 0;
+    outline: none;
+    display: inline-block;
+    border: 1px solid #F1E4FF;
+    background-color: rgba(228, 222, 222, 0.589);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: grey;
+  }
+  
+ 
+
+  input[type=submit] {
+    width: 100%;
+    background-color: rgba(224, 44, 109, 0.87);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
 /* --------------------------------
 footer 
 -------------------------------- */
@@ -304,5 +381,13 @@ Mobile version
         padding-right: 16px;
     }
     /* ---popular-collection-end----- */
+    .get-in{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+       
+    }
     
 }
