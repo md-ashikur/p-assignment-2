@@ -18,6 +18,7 @@ main{
     justify-content: center;
     align-items: center;
     margin: 50px 0;
+    
 }
 
 .headpart{
@@ -195,6 +196,9 @@ footer{
 Mobile version
 ----------------------------------------- */
 @media only screen and (max-width:688px){
+    main{
+        width: 100%;
+    }
     .headpart{
         width: 100%;
     
@@ -208,19 +212,23 @@ Mobile version
     }
     .head-text h1{
         font-size: 28px;
-        display: block;
+        
+    
+    }
+    .head-text p{
+        font-size: 14px;
+        
     
     }
     .head-pic{
         position: absolute;
         top: 50px;
-        left: 0px;
-        width: 300px;
+        left: 15px;
         
     }
     .head-pic img{
         top: 80px;
-        left: 35px;
+        left: 25px;
         width: 250px;
         height: auto;
     }
@@ -238,26 +246,25 @@ Mobile version
 
 
     .section-2{
-        
+        position: relative;
+        top: 80px;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        margin: 200px 0;
+        grid-row-gap: 30px;
+        margin: 200px 0 50px 0;
     
     }
     .collection-title{
+        position: relative;
+        top: 250px;
         font-size: 16px;
         left: 0;
         
     }
-    .cards{
-        width: 1047px;
-    }
-    .card-pic{
-        width: 330px;
-    }
+   
+   
     footer{
         position: relative;
-        top: 200px;
+        top: 100px;
         
     }
 }
