@@ -96,6 +96,11 @@ button:hover{
     transition: transform linear 0.3s;
     box-shadow: inset 2px 2px rgb(150, 20, 20);
 }
+button:hover i{
+    transition: position linear 0.5s;
+    position: relative;
+    left: 10px;
+}
 button i{
     margin-left: 8px;
 }
